@@ -4,10 +4,11 @@
 # DOCKER-VERSION 0.2
 
 from ubuntu:12.04
-ENV http_proxy http://172.31.16.10:8080
-ENV ftp_proxy ftp://172.31.16.10:8080
-ENV https_proxy https://172.31.16.10:8080
-ENV socks_proxy socks://172.31.16.10:8080
+ENV http_proxy http://172.31.4.6:8080
+ENV ftp_proxy ftp://172.31.4.6:8080
+ENV https_proxy https://172.31.4.6:8080
+ENV socks_proxy socks://172.31.4.6:8080
+MAINTAINER dockberwal dockberwal@gmail.com
 # make sure the package repository is up to date
 run echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 run apt-get update
